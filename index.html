@@ -690,6 +690,26 @@ h5{
     padding-right: 0;
   }
 }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  
+  /* خلفية كحلية احترافية مع صورة كتابة على الكمبيوتر */
+  background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), 
+              url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1920');
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* تثبيت الخلفية أثناء الـ Scroll */
+}
+
+/* لتوضيح كروت المنتجات وإبرازها فوق الخلفية الكحلية */
+.card {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
 </style>
      <footer class="footer">
 
