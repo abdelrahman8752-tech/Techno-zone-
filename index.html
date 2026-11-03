@@ -13,7 +13,7 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <title>Techno zone | تكنو زون</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -629,6 +629,66 @@ h5{
 .nav-h2{
   font-size: 25px;
   color: #ffffff;
+}
+/* تنسيقات الشاشات الصغيرة (الموبايل) */
+@media (max-width: 768px) {
+  
+  /* تظبيط شريط التنقل العلوي ليصبح عمودياً وبدون ازدحام */
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  /* تظبيط صندوق البحث ليتناسب مع عرض شاشة الموبايل */
+  .search-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* روابط النافبار تظهر مرتبة تحت بعضها أو بشكل مريح */
+  .nav-links {
+    margin-left: 0;
+    display: flex;
+    gap: 15px;
+  }
+
+  /* قسم الترحيب (Hero) ليصبح النص والصورة تحت بعضهما */
+  .hero {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-img {
+    margin-top: 20px;
+    margin-left: 0;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  /* تحويل شبكة المنتجات (الـ 3 أعمدة) إلى عمود واحد لتناسب الموبايل */
+  .product {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  /* تظبيط الفوتر ليصبح محتواه تحت بعضه */
+  .footer-box {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .links {
+    margin-left: 0;
+    justify-content: center;
+    padding-right: 0;
+  }
 }
 </style>
      <footer class="footer">
